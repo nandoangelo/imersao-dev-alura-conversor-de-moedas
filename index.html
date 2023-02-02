@@ -26,30 +26,30 @@
     <img src="assets/img/alura-logo.svg" alt="Alura" class="alura-logo">
   </a>
   
-  <!-- <div class="container">
+  <div class="container">
     <form method="post">
-      <label for="valorParaConverter">Digite um valor</label><br>
+      <label for="valorParaConverter" class="title">CONVERTA PARA REAIS</</label><br>
+      
       <input type="number" name="valorParaConverter" id="valorParaConverter" placeholder="Digite um valor" autofocus>
 
       <select name="moedaOrigem" id="moedaOrigem">
         <option value="USD" selected>Dólar</option>
-        <option value="BRL">Real</option>
         <option value="EUR">Euro</option>
         <option value="GBP">Libra</option>
+        <option value="BTC">Bitcoin</option>
       </select>
 
-      <select name="moedaConverter" id="moedaConverter">
-        <option value="BRL" selected>Real</option>
-        <option value="USD">Dólar</option>
-        <option value="EUR">Euro</option>
-        <option value="GBP">Libra</option>
-      </select>
-
-      <input type="submit" value="Converter" onclick="converterMoedas()">
+      <br>
+      <input type="button" value="Converter" onclick="converterMoedas()">
       <input type="reset" value="Limpar">
     </form>
-  </div> -->
-  <img src="assets/img/conversao-de-moedas.png">
+  </div>
+
+  <!-- <img src="assets/img/conversao-de-moedas.png"> -->
+
+  <div class="resultado">
+    <p id="resposta">R$ 0,00</p>
+  </div>
   
   <script src="assets/js/comportamento.js"></script>
 </body>

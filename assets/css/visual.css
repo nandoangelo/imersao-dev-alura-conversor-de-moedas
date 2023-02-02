@@ -45,4 +45,15 @@ img {
 
 input, select {
   padding: 0.5em;
+  margin: 5px 0;
+}
+
+.title {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#resposta {
+  font-size: 2em;
+  color: goldenrod;
 }

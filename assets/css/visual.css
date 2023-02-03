@@ -2,7 +2,7 @@ body {
   font-family: "Roboto Mono", monospace;
   text-align: center;
   background-image: url("../img/bg-alura-conversor-moedas.png");
-  background-color: #000000;
+  background-color: #14437d;
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
@@ -53,7 +53,13 @@ input, select {
   font-weight: bold;
 }
 
+.resultado {
+  color: #ffffff;
+  line-height: 0.5em;
+}
+
 #resposta {
   font-size: 2em;
   color: goldenrod;
+  font-weight: bold;
 }

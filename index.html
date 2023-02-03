@@ -28,11 +28,11 @@
   
   <div class="container">
     <form method="post">
-      <label for="valorParaConverter" class="title">CONVERTA PARA REAIS</</label><br>
+      <label for="valorParaConverter" class="title">CONVERTA UM VALOR PARA REAIS (R$)</label><br>
       
-      <input type="number" name="valorParaConverter" id="valorParaConverter" placeholder="Digite um valor" autofocus>
+      <input type="number" name="valorParaConverter" min="0" id="valorParaConverter" placeholder="Digite um valor" autofocus>
 
-      <select name="moedaOrigem" id="moedaOrigem">
+      <select name="moedaOrigem" id="moedaOrigem" onchange="converterMoedas()">
         <option value="USD" selected>Dólar</option>
         <option value="EUR">Euro</option>
         <option value="GBP">Libra</option>
@@ -41,13 +41,12 @@
 
       <br>
       <input type="button" value="Converter" onclick="converterMoedas()">
-      <input type="reset" value="Limpar">
+      <input type="button" value="Limpar" onclick="limparValores()">
     </form>
   </div>
 
-  <!-- <img src="assets/img/conversao-de-moedas.png"> -->
-
   <div class="resultado">
+    <p><span id="moedaConvertida">US$ 0,00 dólares</span> equivalem a:</p>
     <p id="resposta">R$ 0,00</p>
   </div>
   

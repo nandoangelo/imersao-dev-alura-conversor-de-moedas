@@ -65,5 +65,5 @@ function limparValores() {
   // Zera seus valores
   valorParaConverter.value = '';
   res.innerText = 'R$ 0,00';
-  moedaConvertida.innerText = 'US$ 0,00 dólares';
+  moedaConvertida.innerText = '0,00';
 }
